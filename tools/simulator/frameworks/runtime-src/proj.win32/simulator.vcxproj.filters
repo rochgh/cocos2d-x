@@ -40,11 +40,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="game.rc">
-      <Filter>resource</Filter>
-    </ResourceCompile>
+    <Image Include="res\game.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\game.ico" />
+    <ResourceCompile Include="game.rc">
+      <Filter>win32</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

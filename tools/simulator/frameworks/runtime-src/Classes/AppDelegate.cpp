@@ -48,10 +48,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     lua_module_register(L);
 
     // If you want to use Quick-Cocos2d-X, please uncomment below code
-    // register_all_quick_manual(L);
+    register_all_quick_manual(L);
 
     LuaStack* stack = engine->getLuaStack();
-    stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
+    stack->setXXTEAKeyAndSign("roc_hgh", 7, "XT", 2);
     
     //register custom function
     //LuaStack* stack = engine->getLuaStack();
