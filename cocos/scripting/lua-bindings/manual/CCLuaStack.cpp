@@ -53,7 +53,7 @@ extern "C" {
 #include "lua_cocos2dx_physics_manual.hpp"
 #include "lua_cocos2dx_experimental_auto.hpp"
 #include "lua_cocos2dx_experimental_manual.hpp"
-
+#include "lua_dragonbones_auto.hpp"
 
 namespace {
 int lua_print(lua_State * luastate)
@@ -189,6 +189,7 @@ bool LuaStack::init(void)
     register_all_cocos2dx_math_manual(_state);
     register_all_cocos2dx_experimental(_state);
     register_all_cocos2dx_experimental_manual(_state);
+	register_all_dragonbones(_state);
 
     register_glnode_manual(_state);
 #if CC_USE_PHYSICS
