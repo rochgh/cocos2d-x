@@ -67,6 +67,7 @@
 		F293B3D915EB7BE500256477 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3D815EB7BE500256477 /* Foundation.framework */; };
 		F293B3DB15EB7BE500256477 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3DA15EB7BE500256477 /* CoreGraphics.framework */; };
 		F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F293BB7E15EB831F00256477 /* AppDelegate.cpp */; };
+		F7D4D3E61ACDAC3900202B1C /* liblibdragonbones Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A86D141ACDAA3700C5DAE8 /* liblibdragonbones Mac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,13 @@
 			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
 			remoteInfo = "cocos2dx Mac";
 		};
+		F7A86D131ACDAA3700C5DAE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7A86D0F1ACDAA3700C5DAE8 /* libDragonbones.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7F9AE1C1ACD9BAF00FE381B;
+			remoteInfo = "libdragonbones Mac";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -224,6 +232,7 @@
 		F293B3DA15EB7BE500256477 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F293BB7E15EB831F00256477 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		F293BB7F15EB831F00256477 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
+		F7A86D0F1ACDAA3700C5DAE8 /* libDragonbones.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libDragonbones.xcodeproj; path = "../../../../../cocos/editor-support/dragonbones/renderer/cocos2d-x-3.x/proj.ios_mac/libDragonbones.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D4D3E61ACDAC3900202B1C /* liblibdragonbones Mac.a in Frameworks */,
 				9FD6FC0B1A5D27870028EDC6 /* libsimulator Mac.a in Frameworks */,
 				9F7214271A5C1E4C00DAED06 /* libluacocos2d Mac.a in Frameworks */,
 				15427CEE198F24AF00DC375D /* libcocos2d Mac.a in Frameworks */,
@@ -359,6 +369,7 @@
 		F293B3BD15EB7BE500256477 = {
 			isa = PBXGroup;
 			children = (
+				F7A86D0F1ACDAA3700C5DAE8 /* libDragonbones.xcodeproj */,
 				9FD6FC021A5D26580028EDC6 /* libsimulator.xcodeproj */,
 				C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */,
 				15A8A4031834BDA200142BE0 /* cocos2d_libs.xcodeproj */,
@@ -426,6 +437,14 @@
 			);
 			name = Resources;
 			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		F7A86D101ACDAA3700C5DAE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7A86D141ACDAA3700C5DAE8 /* liblibdragonbones Mac.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,6 +525,10 @@
 					ProjectRef = C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */;
 				},
 				{
+					ProductGroup = F7A86D101ACDAA3700C5DAE8 /* Products */;
+					ProjectRef = F7A86D0F1ACDAA3700C5DAE8 /* libDragonbones.xcodeproj */;
+				},
+				{
 					ProductGroup = 9FD6FC031A5D26580028EDC6 /* Products */;
 					ProjectRef = 9FD6FC021A5D26580028EDC6 /* libsimulator.xcodeproj */;
 				},
@@ -559,6 +582,13 @@
 			fileType = archive.ar;
 			path = "libsimulator iOS.a";
 			remoteRef = 9FD6FC091A5D26580028EDC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F7A86D141ACDAA3700C5DAE8 /* liblibdragonbones Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "liblibdragonbones Mac.a";
+			remoteRef = F7A86D131ACDAA3700C5DAE8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -759,6 +789,7 @@
 					USE_FILE32API,
 					"CC_LUA_ENGINE_ENABLED=1",
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					"DRAGON_BONES_ENABLE_LUA=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -782,6 +813,7 @@
 					USE_FILE32API,
 					"CC_LUA_ENGINE_ENABLED=1",
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					"DRAGON_BONES_ENABLE_LUA=1",
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
