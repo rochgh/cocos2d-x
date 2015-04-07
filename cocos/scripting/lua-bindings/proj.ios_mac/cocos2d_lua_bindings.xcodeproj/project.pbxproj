@@ -284,6 +284,10 @@
 		F4FE0D7719ECD02400B8B12B /* LuaTouchTargetNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4FE0D6419ECD02400B8B12B /* LuaTouchTargetNode.cpp */; };
 		F4FE0D7819ECD02400B8B12B /* LuaTouchTargetNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FE0D6519ECD02400B8B12B /* LuaTouchTargetNode.h */; };
 		F4FE0D7919ECD02400B8B12B /* LuaTouchTargetNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FE0D6519ECD02400B8B12B /* LuaTouchTargetNode.h */; };
+		F7F9AECC1ACDA55F00FE381B /* lua_dragonbones_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7F9AECA1ACDA55F00FE381B /* lua_dragonbones_auto.cpp */; };
+		F7F9AECD1ACDA55F00FE381B /* lua_dragonbones_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7F9AECA1ACDA55F00FE381B /* lua_dragonbones_auto.cpp */; };
+		F7F9AECE1ACDA55F00FE381B /* lua_dragonbones_auto.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F7F9AECB1ACDA55F00FE381B /* lua_dragonbones_auto.hpp */; };
+		F7F9AECF1ACDA55F00FE381B /* lua_dragonbones_auto.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F7F9AECB1ACDA55F00FE381B /* lua_dragonbones_auto.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -437,6 +441,8 @@
 		F4FE0D6319ECD02400B8B12B /* LuaTouchEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaTouchEventManager.h; sourceTree = "<group>"; };
 		F4FE0D6419ECD02400B8B12B /* LuaTouchTargetNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LuaTouchTargetNode.cpp; sourceTree = "<group>"; };
 		F4FE0D6519ECD02400B8B12B /* LuaTouchTargetNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaTouchTargetNode.h; sourceTree = "<group>"; };
+		F7F9AECA1ACDA55F00FE381B /* lua_dragonbones_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_dragonbones_auto.cpp; sourceTree = "<group>"; };
+		F7F9AECB1ACDA55F00FE381B /* lua_dragonbones_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua_dragonbones_auto.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -594,6 +600,8 @@
 		1AACE74818BC45C200215002 /* auto */ = {
 			isa = PBXGroup;
 			children = (
+				F7F9AECA1ACDA55F00FE381B /* lua_dragonbones_auto.cpp */,
+				F7F9AECB1ACDA55F00FE381B /* lua_dragonbones_auto.hpp */,
 				159552381A25E1C5001E9FC9 /* lua_cocos2dx_csloader_auto.cpp */,
 				159552391A25E1C5001E9FC9 /* lua_cocos2dx_csloader_auto.hpp */,
 				3E2BDB0319C5E5FE0055CDCD /* lua_cocos2dx_audioengine_auto.cpp */,
@@ -836,6 +844,7 @@
 				155C7DF819A71C4400F08B25 /* lua_cocos2dx_cocosdenshion_manual.h in Headers */,
 				F4FE0D7419ECD02400B8B12B /* LuaTouchEventManager.h in Headers */,
 				15415AAF19A71A53004F1E71 /* except.h in Headers */,
+				F7F9AECE1ACDA55F00FE381B /* lua_dragonbones_auto.hpp in Headers */,
 				150906F319D556D1002C4D97 /* lua_cocos2dx_audioengine_manual.h in Headers */,
 				155C7E0419A71C6D00F08B25 /* lua_cocos2dx_cocosbuilder_manual.h in Headers */,
 				15415ACB19A71A53004F1E71 /* socket.h in Headers */,
@@ -908,6 +917,7 @@
 				155C7DF919A71C4500F08B25 /* lua_cocos2dx_cocosdenshion_manual.h in Headers */,
 				F4FE0D7519ECD02400B8B12B /* LuaTouchEventManager.h in Headers */,
 				15415AB019A71A53004F1E71 /* except.h in Headers */,
+				F7F9AECF1ACDA55F00FE381B /* lua_dragonbones_auto.hpp in Headers */,
 				3E2BDB0B19C5E6100055CDCD /* lua_cocos2dx_audioengine_manual.h in Headers */,
 				155C7E0519A71C6F00F08B25 /* lua_cocos2dx_cocosbuilder_manual.h in Headers */,
 				15415ACC19A71A53004F1E71 /* socket.h in Headers */,
@@ -1083,6 +1093,7 @@
 				155C7E2619A71CDD00F08B25 /* lua_cocos2dx_ui_manual.cpp in Sources */,
 				F4FE0D6A19ECD02400B8B12B /* LuaEventNode.cpp in Sources */,
 				F4FE0D7219ECD02400B8B12B /* LuaTouchEventManager.cpp in Sources */,
+				F7F9AECC1ACDA55F00FE381B /* lua_dragonbones_auto.cpp in Sources */,
 				15415A7019A71768004F1E71 /* lua_cocos2dx_extension_auto.cpp in Sources */,
 				155C7DF619A71C3E00F08B25 /* lua_cocos2dx_cocosdenshion_manual.cpp in Sources */,
 				15415AA519A71A53004F1E71 /* auxiliar.c in Sources */,
@@ -1162,6 +1173,7 @@
 				155C7E2719A71CDE00F08B25 /* lua_cocos2dx_ui_manual.cpp in Sources */,
 				F4FE0D6B19ECD02400B8B12B /* LuaEventNode.cpp in Sources */,
 				F4FE0D7319ECD02400B8B12B /* LuaTouchEventManager.cpp in Sources */,
+				F7F9AECD1ACDA55F00FE381B /* lua_dragonbones_auto.cpp in Sources */,
 				15415AB619A71A53004F1E71 /* io.c in Sources */,
 				155C7DF719A71C4000F08B25 /* lua_cocos2dx_cocosdenshion_manual.cpp in Sources */,
 				155C7DEF19A71C0900F08B25 /* lua_cocos2dx_ui_auto.cpp in Sources */,
@@ -1194,9 +1206,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"COCOS2D_DEBUG=1",
-					USE_FILE32API,
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					USE_FILE32API,
+					"COCOS2D_DEBUG=1",
+					"DRAGON_BONES_ENABLE_LUA=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
@@ -1214,7 +1227,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../math/kazmath $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include/chipmunk $(SRCROOT)/../../../../external/lua $(SRCROOT)/../../../../external/lua/luajit/include $(SRCROOT)/../../../../external/lua/tolua $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../math/kazmath $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include/chipmunk $(SRCROOT)/../../../../external/lua $(SRCROOT)/../../../../external/lua/luajit/include $(SRCROOT)/../../../../external/lua/tolua $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../editor-support/dragonbones $(SRCROOT)/../../../editor-support/dragonbones/renderer/cocos2d-x-3.x";
 			};
 			name = Debug;
 		};
@@ -1229,6 +1242,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					"DRAGON_BONES_ENABLE_LUA=1",
 					NDEBUG,
 					USE_FILE32API,
 				);
@@ -1247,7 +1261,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../math/kazmath $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include/chipmunk $(SRCROOT)/../../../../external/lua $(SRCROOT)/../../../../external/lua/luajit/include $(SRCROOT)/../../../../external/lua/tolua $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../math/kazmath $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include/chipmunk $(SRCROOT)/../../../../external/lua $(SRCROOT)/../../../../external/lua/luajit/include $(SRCROOT)/../../../../external/lua/tolua $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../editor-support/dragonbones $(SRCROOT)/../../../editor-support/dragonbones/renderer/cocos2d-x-3.x";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
