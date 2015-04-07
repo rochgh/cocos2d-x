@@ -66,6 +66,13 @@ local function setDesignResolution(r, framesize)
             width = framesize.width / scaleX
             height = framesize.height / scaleX
             view:setDesignResolutionSize(width, height, cc.ResolutionPolicy.NO_BORDER)
+        elseif r.autoscale == "FIXED_WIDTH_PRIOR" then
+            if scaleX > scaleY then
+                height = framesize.height / scaleX
+            else
+                width = framesize.width / scaleY
+            end           
+            view:setDesignResolutionSize(width, height, cc.ResolutionPolicy.NO_BORDER)
         elseif r.autoscale == "FIXED_HEIGHT" then
             width = framesize.width / scaleY
             height = framesize.height / scaleY
