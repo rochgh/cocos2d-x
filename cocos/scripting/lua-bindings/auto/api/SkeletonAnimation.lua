@@ -37,6 +37,13 @@
         
 --------------------------------
 -- 
+-- @function [parent=#SkeletonAnimation] update 
+-- @param self
+-- @param #float deltaTime
+-- @return SkeletonAnimation#SkeletonAnimation self (return value: sp.SkeletonAnimation)
+        
+--------------------------------
+-- 
 -- @function [parent=#SkeletonAnimation] setCompleteListener 
 -- @param self
 -- @param #function listener
